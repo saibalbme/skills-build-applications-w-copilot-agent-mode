@@ -9,10 +9,10 @@ import usersRouter from './routes/users';
 import workoutsRouter from './routes/workouts';
 
 const app = express();
-const PORT = Number(process.env.PORT || 8000);
+const PORT = 8000;
 const CODESPACE_NAME = process.env.CODESPACE_NAME;
 const API_HOST = CODESPACE_NAME
-  ? `https://${CODESPACE_NAME}-8000.githubpreview.dev`
+  ? `https://${CODESPACE_NAME}-8000.app.github.dev`
   : `http://localhost:${PORT}`;
 const API_URL = `${API_HOST}/api`;
 
